@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the grid boxes */
+.square{
+    height: auto;
+    width: auto;
+    border: 3px solid hsl(0, 0%, 30%);
+}
+
+/* the grid container */
+.grid-container{
+    height: 300px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* the clicked state */
+.green{
+    background-color: rgb(12, 177, 12);
+}
